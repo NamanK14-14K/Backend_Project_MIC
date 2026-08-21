@@ -1,0 +1,19 @@
+{
+  "name": "backend-project-mic",
+  "version": "1.0.0",
+  "description": "Prerequisite-aware Microsoft learning roadmap API with progress tracking, SQLite, transactions, and server-side AI explanations.",
+  "main": "src/pathforge-server.js",
+  "scripts": {
+    "dev": "node --watch src/pathforge-server.js",
+    "start": "node src/pathforge-server.js",
+    "seed": "node src/pathforge-seed.js",
+    "test": "node tests/pathforge-concurrency.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}
